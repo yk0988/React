@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:#F0F4F8
+  padding: 20px;
+}
+
+.App {
+  margin: 0 auto;
+  width: 500px;
+  gap: 10px;   
+  font-display:             
+}
+
+.App h3 {
+  text-align: center;         
+  color: #333333;          
+  font-size: 60px;           
+  margin-bottom: 20px;        
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.App > section {
+  padding: 20px;
+  background-color: rgb(245, 245, 245);  
+  border: 2px solid  #A9B9C3; 
+  border-radius: 5px;
+  margin-bottom: 10px;  
+}
+
+.App button {
+  background-color: #6C9CCF; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+  width: 70px;
+  margin: 2px;
+
+}
+
+.App button:hover {
+  background-color: 
+  #5689A9;
+}
