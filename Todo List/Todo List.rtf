@@ -1,0 +1,181 @@
+{\rtf1\ansi\ansicpg949\deff0\nouicompat\deflang1033\deflangfe1042{\fonttbl{\f0\fnil\fprq2\fcharset129 \'c7\'d4\'c3\'ca\'b7\'d2\'b9\'d9\'c5\'c1;}{\f1\fnil\fcharset1 Segoe UI Symbol;}{\f2\fnil\fcharset129 \'b8\'bc\'c0\'ba \'b0\'ed\'b5\'f1;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\nowidctlpar\sl384\slmult1\qj\cf1\f0\fs20\lang1042 React TodoList \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae \'b1\'b8\'c7\'f6 \'ba\'d0\'bc\'ae\par
+\par
+1. \'b0\'b3\'bf\'e4\par
+\par
+\'b8\'ae\'be\'d7\'c6\'ae(React) \'b1\'e2\'b9\'dd\'c0\'c7 TodoList \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 \'c4\'da\'b5\'e5\'bf\'a1 \'b4\'eb\'c7\'d1 \'ba\'d0\'bc\'ae\'c0\'cc\'b4\'d9. TodoList \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b4\'c2 \'bb\'e7\'bf\'eb\'c0\'da\'b0\'a1 \'c0\'d4\'b7\'c2\'c7\'d1 \'b0\'cb\'bb\'f6\'be\'ee\'bf\'a1 \'b5\'fb\'b6\'f3 Todo \'c7\'d7\'b8\'f1\'c0\'bb \'c7\'ca\'c5\'cd\'b8\'b5\'c7\'cf\'b0\'ed, \'bf\'cf\'b7\'e1\'b5\'c8 \'c7\'d7\'b8\'f1\'b0\'fa \'b9\'cc\'bf\'cf\'b7\'e1\'b5\'c8 \'c7\'d7\'b8\'f1\'bf\'a1 \'b4\'eb\'c7\'d1 \'c5\'eb\'b0\'e8\'b8\'a6 \'c1\'a6\'b0\'f8\'c7\'d1\'b4\'d9. \'c0\'cc \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b4\'c2 \'bb\'f3\'c5\'c2 \'b0\'fc\'b8\'ae\'bf\'cd Context API\'b8\'a6 \'c8\'b0\'bf\'eb\'c7\'cf\'bf\'a9 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c3\'b3\'b8\'ae\'c7\'cf\'b0\'ed \'c3\'d6\'c0\'fb\'c8\'ad\'c7\'d1\'b4\'d9.\par
+\par
+2. \'bb\'e7\'bf\'eb\'b5\'c8 React \'c8\'c5 (Hooks)\par
+\par
+\'b8\'ae\'be\'d7\'c6\'ae\'bf\'a1\'bc\'ad \'c1\'a6\'b0\'f8\'c7\'cf\'b4\'c2 \'c8\'c5\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d8 \'bb\'f3\'c5\'c2 \'b0\'fc\'b8\'ae\'bf\'cd \'c3\'d6\'c0\'fb\'c8\'ad\'b5\'c8 \'b7\'bb\'b4\'f5\'b8\'b5\'c0\'bb \'b1\'b8\'c7\'f6\'c7\'d1\'b4\'d9. \'bf\'a9\'b1\'e2\'bc\'ad \'bb\'e7\'bf\'eb\'b5\'c8 \'c1\'d6\'bf\'e4 \'c8\'c5\'b5\'e9\'c0\'ba \'be\'c6\'b7\'a1\'bf\'cd \'b0\'b0\'b4\'d9.\par
+\par
+2.1 useState\par
+\par
+useState\'b4\'c2 \'b8\'ae\'be\'d7\'c6\'ae\'bf\'a1\'bc\'ad \'bb\'f3\'c5\'c2\'b8\'a6 \'b0\'fc\'b8\'ae\'c7\'cf\'b4\'c2 \'b1\'e2\'ba\'bb\'c0\'fb\'c0\'ce \'c8\'c5\'c0\'cc\'b4\'d9. \'c0\'cc \'c8\'c5\'c0\'ba \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'c0\'c7 \'bb\'f3\'c5\'c2\'b8\'a6 \'bc\'b1\'be\'f0\'c7\'cf\'b0\'ed \'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'d4 \'c7\'d1\'b4\'d9.\par
+\par
+jsx\par
+const [search, setSearch] = useState(""); \par
+\par
+\par
+search \'bb\'f3\'c5\'c2\'b4\'c2 \'bb\'e7\'bf\'eb\'c0\'da\'b0\'a1 \'c0\'d4\'b7\'c2\'c7\'d1 \'b0\'cb\'bb\'f6\'be\'ee\'b8\'a6 \'b0\'fc\'b8\'ae\'c7\'cf\'b8\'e7, setSearch\'b4\'c2 \'b0\'cb\'bb\'f6\'be\'ee\'b0\'a1 \'b9\'d9\'b2\'f0 \'b6\'a7\'b8\'b6\'b4\'d9 search \'bb\'f3\'c5\'c2\'b8\'a6 \'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae\'c7\'d1\'b4\'d9.\par
+\par
+2.2 useContext\par
+\par
+useContext\'b4\'c2 Context API\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'bf\'a9 \'ba\'ce\'b8\'f0 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b7\'ce\'ba\'ce\'c5\'cd \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b9\'de\'be\'c6\'bf\'c0\'b4\'c2 \'c8\'c5\'c0\'cc\'b4\'d9. \'bf\'a9\'b1\'e2\'bc\'ad\'b4\'c2 TodoDispatchContext\'bf\'cd TodoStateContext\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d8 Todo \'b8\'f1\'b7\'cf\'b0\'fa Todo \'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae/\'bb\'e8\'c1\'a6 \'b1\'e2\'b4\'c9\'c0\'bb \'b0\'a1\'c1\'ae\'bf\'c2\'b4\'d9.\par
+\par
+jsx\par
+const \{ onUpdate, onDelete \} = useContext(TodoDispatchContext);  \par
+const todo = useContext(TodoStateContext);  \par
+\par
+\par
+- onUpdate, onDelete: Todo \'c7\'d7\'b8\'f1\'c0\'bb \'bc\'f6\'c1\'a4\'c7\'cf\'b0\'c5\'b3\'aa \'bb\'e8\'c1\'a6\'c7\'cf\'b4\'c2 \'c7\'d4\'bc\'f6\'b5\'e9\'c0\'cc\'b4\'d9.\par
+- todo: Todo \'b8\'f1\'b7\'cf \'b5\'a5\'c0\'cc\'c5\'cd \'b9\'e8\'bf\'ad\'c0\'cc\'b4\'d9.\par
+\par
+2.3 useMemo\par
+\par
+useMemo\'b4\'c2 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae \'b8\'ae\'b7\'bb\'b4\'f5\'b8\'b5 \'bd\'c3 \'b0\'e8\'bb\'ea\'b5\'c8 \'b0\'aa\'c0\'bb \'b8\'de\'b8\'f0\'c0\'cc\'c1\'a6\'c0\'cc\'bc\'c7\'c7\'cf\'bf\'a9 \'ba\'d2\'c7\'ca\'bf\'e4\'c7\'d1 \'b0\'e8\'bb\'ea\'c0\'bb \'b9\'e6\'c1\'f6\'c7\'cf\'b0\'ed \'bc\'ba\'b4\'c9\'c0\'bb \'c3\'d6\'c0\'fb\'c8\'ad\'c7\'cf\'b4\'c2 \'b5\'a5 \'bb\'e7\'bf\'eb\'b5\'c8\'b4\'d9. \'b5\'ce \'b0\'a1\'c1\'f6 \'b8\'f1\'c0\'fb\'c0\'bb \'c0\'a7\'c7\'d8 \'bb\'e7\'bf\'eb\'b5\'c8\'b4\'d9.\par
+\par
+2.3.1 \'b0\'cb\'bb\'f6 \'b0\'e1\'b0\'fa \'c3\'d6\'c0\'fb\'c8\'ad\par
+\par
+jsx\par
+const getSearchResult = useMemo(() => \{\par
+    return search === ""\par
+        ? todo\par
+        : todo.filter((it) => it.content.includes(search)); \par
+\}, [search, todo]);\par
+\par
+\par
+- search\'bf\'cd todo\'b0\'a1 \'ba\'af\'b0\'e6\'b5\'c9 \'b6\'a7\'b8\'b8 getSearchResult\'b0\'a1 \'b0\'e8\'bb\'ea\'b5\'c8\'b4\'d9.\par
+- search\'b0\'a1 \'ba\'f1\'be\'ee \'c0\'d6\'c0\'b8\'b8\'e9 \'c0\'fc\'c3\'bc Todo \'b8\'f1\'b7\'cf\'c0\'bb \'b9\'dd\'c8\'af\'c7\'cf\'b0\'ed, \'b1\'d7\'b7\'b8\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 content \'c7\'ca\'b5\'e5\'bf\'a1 search \'b9\'ae\'c0\'da\'bf\'ad\'c0\'cc \'c6\'f7\'c7\'d4\'b5\'c8 \'c7\'d7\'b8\'f1\'b8\'b8 \'c7\'ca\'c5\'cd\'b8\'b5\'c7\'d8\'bc\'ad \'b9\'dd\'c8\'af\'c7\'d1\'b4\'d9.\par
+\par
+2.3.2 \'bf\'cf\'b7\'e1/\'b9\'cc\'bf\'cf\'b7\'e1 \'c7\'d7\'b8\'f1 \'ba\'d0\'bc\'ae\par
+\par
+jsx\par
+const analyzeTodo = useMemo(() => \{\par
+    const totalCount = todo.length;\par
+    const doneCount = todo.filter((it) => it.isDone).length;\par
+    const notDoneCount = totalCount - doneCount;\par
+\par
+    return \{ totalCount, doneCount, notDoneCount \};\par
+\}, [todo]);\par
+\par
+\par
+- todo \'b9\'e8\'bf\'ad\'c0\'cc \'ba\'af\'b0\'e6\'b5\'c9 \'b6\'a7\'b8\'b8 analyzeTodo\'b0\'a1 \'b4\'d9\'bd\'c3 \'b0\'e8\'bb\'ea\'b5\'c8\'b4\'d9.\par
+- totalCount\'b4\'c2 \'c0\'fc\'c3\'bc Todo \'c7\'d7\'b8\'f1\'c0\'c7 \'b0\'b3\'bc\'f6, doneCount\'b4\'c2 \'bf\'cf\'b7\'e1\'b5\'c8 \'c7\'d7\'b8\'f1\'c0\'c7 \'b0\'b3\'bc\'f6, notDoneCount\'b4\'c2 \'b9\'cc\'bf\'cf\'b7\'e1\'b5\'c8 \'c7\'d7\'b8\'f1\'c0\'c7 \'b0\'b3\'bc\'f6\'b8\'a6 \'b3\'aa\'c5\'b8\'b3\'bd\'b4\'d9.\par
+\par
+3. Todo \'b8\'f1\'b7\'cf \'c7\'ca\'c5\'cd\'b8\'b5 \'b9\'d7 \'c5\'eb\'b0\'e8 \'b0\'e8\'bb\'ea\par
+\par
+3.1 \'b0\'cb\'bb\'f6 \'b1\'e2\'b4\'c9\par
+\par
+\'bb\'e7\'bf\'eb\'c0\'da\'b0\'a1 input \'bf\'e4\'bc\'d2\'bf\'a1 \'b0\'cb\'bb\'f6\'be\'ee\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'b8\'e9 onChangeSearch \'c7\'d4\'bc\'f6\'b0\'a1 \'c8\'a3\'c3\'e2\'b5\'c7\'be\'ee search \'bb\'f3\'c5\'c2\'b0\'a1 \'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae\'b5\'c8\'b4\'d9. \'c0\'cc \'bb\'f3\'c5\'c2\'b0\'a1 \'ba\'af\'b0\'e6\'b5\'c7\'b8\'e9 getSearchResult\'b0\'a1 \'c0\'e7\'b0\'e8\'bb\'ea\'b5\'c7\'be\'ee \'c7\'ca\'c5\'cd\'b8\'b5\'b5\'c8 Todo \'c7\'d7\'b8\'f1\'b5\'e9\'c0\'cc \'c8\'ad\'b8\'e9\'bf\'a1 \'c7\'a5\'bd\'c3\'b5\'c8\'b4\'d9.\par
+\par
+jsx\par
+<input\par
+    value=\{search\}\par
+    onChange=\{onChangeSearch\} \par
+    className="searchbar"\par
+    placeholder="\'b0\'cb\'bb\'f6\'be\'ee\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4" \par
+/>\par
+\par
+\par
+getSearchResult\'b4\'c2 search \'b0\'aa\'bf\'a1 \'b5\'fb\'b6\'f3 \'c7\'ca\'c5\'cd\'b8\'b5\'b5\'c8 Todo \'c7\'d7\'b8\'f1\'b5\'e9\'c0\'bb \'b9\'dd\'c8\'af\'c7\'cf\'b8\'e7, \'c0\'cc\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'bf\'a9 \'c8\'ad\'b8\'e9\'bf\'a1 Todo \'c7\'d7\'b8\'f1\'c0\'bb \'b7\'bb\'b4\'f5\'b8\'b5\'c7\'d1\'b4\'d9.\par
+\par
+3.2 \'bf\'cf\'b7\'e1/\'b9\'cc\'bf\'cf\'b7\'e1 \'c7\'d7\'b8\'f1 \'c5\'eb\'b0\'e8\par
+\par
+analyzeTodo\'b4\'c2 \'c0\'fc\'c3\'bc Todo \'c7\'d7\'b8\'f1\'bf\'a1\'bc\'ad \'bf\'cf\'b7\'e1\'b5\'c8 \'c7\'d7\'b8\'f1\'b0\'fa \'b9\'cc\'bf\'cf\'b7\'e1\'b5\'c8 \'c7\'d7\'b8\'f1\'c0\'c7 \'b0\'b3\'bc\'f6\'b8\'a6 \'b0\'e8\'bb\'ea\'c7\'cf\'bf\'a9 \'c5\'eb\'b0\'e8\'b8\'a6 \'c1\'a6\'b0\'f8\'c7\'d1\'b4\'d9. \'c0\'cc \'b0\'aa\'b5\'e9\'c0\'ba useMemo\'b7\'ce \'c3\'d6\'c0\'fb\'c8\'ad\'b5\'c8\'b4\'d9.\par
+\par
+jsx\par
+<div className="stats">\par
+    <div>\'c3\'d1 \'b0\'b3\'bc\'f6: \{totalCount\}</div>\par
+    <div>\'bf\'cf\'b7\'e1: \{doneCount\}</div>\par
+    <div>\'b9\'cc\'bf\'cf\'b7\'e1: \{notDoneCount\}</div>\par
+</div>\par
+\par
+\par
+4. \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae \'b7\'bb\'b4\'f5\'b8\'b5 \'b1\'b8\'c1\'b6\par
+\par
+\'c0\'cc \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b4\'c2 \'b4\'d9\'c0\'bd\'b0\'fa \'b0\'b0\'c0\'ba \'b9\'e6\'bd\'c4\'c0\'b8\'b7\'ce \'b7\'bb\'b4\'f5\'b8\'b5\'b5\'c8\'b4\'d9:\par
+\par
+1. \'b0\'cb\'bb\'f6\'be\'ee \'c0\'d4\'b7\'c2\'b6\'f5 (input): \'bb\'e7\'bf\'eb\'c0\'da\'b0\'a1 \'b0\'cb\'bb\'f6\'be\'ee\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'d4 \'c7\'cf\'bf\'a9, \'c0\'d4\'b7\'c2\'bf\'a1 \'b5\'fb\'b6\'f3 Todo \'c7\'d7\'b8\'f1\'c0\'bb \'c7\'ca\'c5\'cd\'b8\'b5\'c7\'d1\'b4\'d9.\par
+2. \'c5\'eb\'b0\'e8 \'bf\'b5\'bf\'aa (div.stats): Todo \'b8\'f1\'b7\'cf\'bf\'a1\'bc\'ad \'bf\'cf\'b7\'e1\'b5\'c8 \'c7\'d7\'b8\'f1, \'b9\'cc\'bf\'cf\'b7\'e1\'b5\'c8 \'c7\'d7\'b8\'f1, \'c0\'fc\'c3\'bc \'c7\'d7\'b8\'f1\'c0\'c7 \'b0\'b3\'bc\'f6\'b8\'a6 \'c7\'a5\'bd\'c3\'c7\'d1\'b4\'d9.\par
+3. Todo \'c7\'d7\'b8\'f1 \'b8\'f1\'b7\'cf (div.list_wrapper): getSearchResult \'b9\'e8\'bf\'ad\'c0\'bb \'bc\'f8\'c8\'b8\'c7\'cf\'b8\'e7 \'b0\'a2 Todo \'c7\'d7\'b8\'f1\'c0\'bb TodoItem \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b7\'ce \'b7\'bb\'b4\'f5\'b8\'b5\'c7\'d1\'b4\'d9. \'b0\'a2 Todo \'c7\'d7\'b8\'f1\'bf\'a1\'b4\'c2 \'bc\'f6\'c1\'a4(onUpdate)\'b0\'fa \'bb\'e8\'c1\'a6(onDelete) \'b1\'e2\'b4\'c9\'c0\'bb \'c1\'a6\'b0\'f8\'c7\'cf\'b4\'c2 \'c7\'d4\'bc\'f6\'b5\'e9\'c0\'cc \'c0\'fc\'b4\'de\'b5\'c8\'b4\'d9.\par
+\par
+jsx\par
+<div className="list_wrapper">\par
+    \{getSearchResult.map((it) => (\par
+        <TodoItem key=\{it.id\} \{...it\} onUpdate=\{onUpdate\} onDelete=\{onDelete\} />\par
+    ))\}\par
+</div>\par
+\par
+\par
+5. \'c4\'da\'b5\'e5 \'b1\'b8\'c7\'f6\par
+\par
+jsx\par
+import \{ useMemo, useState, useContext \} from "react"; \par
+import TodoItem from "./TodoItem";\par
+import "./TodoList.css";\par
+import \{ TodoDispatchContext, TodoStateContext \} from "../App";\par
+\par
+const TodoList = () => \{\par
+    const \{ onUpdate, onDelete \} = useContext(TodoDispatchContext);  // Todo \'bc\'f6\'c1\'a4, \'bb\'e8\'c1\'a6 \'c7\'d4\'bc\'f6\par
+    const todo = useContext(TodoStateContext);  // Todo \'b8\'f1\'b7\'cf \'b5\'a5\'c0\'cc\'c5\'cd \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2\par
+    const [search, setSearch] = useState("");  // \'b0\'cb\'bb\'f6\'be\'ee \'b0\'fc\'b8\'ae\par
+\par
+    const onChangeSearch = (e) => \{\par
+        setSearch(e.target.value);\par
+    \};\par
+\par
+    const getSearchResult = useMemo(() => \{\par
+        return search === ""\par
+            ? todo\par
+            : todo.filter((it) => it.content.includes(search));\par
+    \}, [search, todo]);\par
+\par
+    const analyzeTodo = useMemo(() => \{\par
+        const totalCount = todo.length;\par
+        const doneCount = todo.filter((it) => it.isDone).length;\par
+        const notDoneCount = totalCount - doneCount;\par
+\par
+        return \{ totalCount, doneCount, notDoneCount \};\par
+    \}, [todo]);\par
+\par
+    const \{ totalCount, doneCount, notDoneCount \} = analyzeTodo;\par
+\par
+    return (\par
+        <div className="TodoList">\par
+            <h4>Todo List \f1\u-10180?\u-8399?\f0 </h4>\par
+            <input\par
+                value=\{search\}\par
+                onChange=\{onChangeSearch\}\par
+                className="searchbar"\par
+                placeholder="\'b0\'cb\'bb\'f6\'be\'ee\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4" \par
+            />\par
+\par
+            <div className="stats">\par
+                <div>\'c3\'d1 \'b0\'b3\'bc\'f6: \{totalCount\}</div>\par
+                <div>\'bf\'cf\'b7\'e1: \{doneCount\}</div>\par
+                <div>\'b9\'cc\'bf\'cf\'b7\'e1: \{notDoneCount\}</div>\par
+                <div className="underline"></div>\par
+                <br />\par
+            </div>\par
+\par
+            <div className="list_wrapper">\par
+                \{getSearchResult.map((it) => (\par
+                    <TodoItem key=\{it.id\} \{...it\} onUpdate=\{onUpdate\} onDelete=\{onDelete\} />\par
+                ))\}\par
+            </div>\par
+        </div>\par
+    );\par
+\};\par
+\par
+export default TodoList;\par
+\par
+\par
+6. \'b0\'e1\'b7\'d0\par
+\par
+
+\pard\sa200\sl276\slmult1\'c0\'cc \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b4\'c2 \'b8\'ae\'be\'d7\'c6\'ae\'bf\'a1\'bc\'ad \'c1\'a6\'b0\'f8\'c7\'cf\'b4\'c2 \'c8\'c5\'c0\'bb \'c8\'b0\'bf\'eb\'c7\'d8 \'c8\'bf\'c0\'b2\'c0\'fb\'c0\'ce \'bb\'f3\'c5\'c2 \'b0\'fc\'b8\'ae\'bf\'cd \'c3\'d6\'c0\'fb\'c8\'ad\'b5\'c8 \'b7\'bb\'b4\'f5\'b8\'b5\'c0\'bb \'b1\'b8\'c7\'f6\'c7\'d1 \'bf\'b9\'c0\'cc\'b4\'d9. \'b0\'cb\'bb\'f6 \'b1\'e2\'b4\'c9\'b0\'fa \'c5\'eb\'b0\'e8 \'b1\'e2\'b4\'c9\'c0\'bb \'c6\'f7\'c7\'d4\'c7\'d1 Todo \'b8\'f1\'b7\'cf\'c0\'bb \'b0\'fc\'b8\'ae\'c7\'cf\'b8\'e7, TodoItem \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d8 Todo \'c7\'d7\'b8\'f1\'c0\'bb \'c8\'ad\'b8\'e9\'bf\'a1 \'b7\'bb\'b4\'f5\'b8\'b5\'c7\'d1\'b4\'d9. useMemo \'c8\'c5\'c0\'bb \'c5\'eb\'c7\'d8 \'bc\'ba\'b4\'c9 \'c3\'d6\'c0\'fb\'c8\'ad\'b8\'a6 \'b4\'de\'bc\'ba\'c7\'cf\'bf\'a9 \'ba\'d2\'c7\'ca\'bf\'e4\'c7\'d1 \'b7\'bb\'b4\'f5\'b8\'b5\'c0\'bb \'b9\'e6\'c1\'f6\'c7\'d1\'b4\'d9.\cf0\f2\lang18\par
+}
+ 

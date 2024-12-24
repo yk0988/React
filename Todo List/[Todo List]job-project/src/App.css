@@ -1,0 +1,17 @@
+.App {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+  /* border: 1px solid gray; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.underline {
+  border-bottom: 1px solid rgb(223, 221, 221); /* 2px 두께의 검은색 밑줄 */
+  width: 100%; /* 가로 길이를 100%로 설정 */
+  margin-top: 25px; /* 위쪽 여백을 추가 (선택 사항) */
+}
