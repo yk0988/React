@@ -1,0 +1,52 @@
+/* 버튼들을 가로로 배치 */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;  /* 가로로 배치 */
+  justify-content: center;  /* 버튼들이 중앙 정렬되도록 */
+  gap: 20px;  /* 버튼들 간의 간격 */
+}
+
+ul li {
+  margin: 0;  /* 각 버튼의 여백 제거 */
+  display: inline-flex;  /* 버튼을 인라인처럼 배치 */
+  align-items: center;  /* 버튼들을 수직 중앙에 맞추기 */
+}
+
+/* 기본 버튼 스타일 */
+ul li a, ul li input[type="button"] {
+  padding: 10px 20px;
+  background-color: #007bff; /* 기본 파란색 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block; /* a 태그와 input 버튼들이 동일하게 취급되도록 설정 */
+}
+
+/* 버튼 호버 스타일 */
+ul li a:hover, ul li input[type="button"]:hover {
+  background-color: #0056b3; /* 버튼 호버 시 어두운 파란색 */
+}
+
+/* Update 버튼 연두색 */
+ul li.update input[type="button"] {
+  background-color: #28a745; /* 초록색 */
+}
+
+ul li.update input[type="button"]:hover {
+  background-color: #218838; /* 어두운 초록색 */
+}
+
+/* Delete 버튼 붉은색 */
+ul li.delete input[type="button"] {
+  background-color: #dc3545; /* 빨간색 */
+}
+
+ul li.delete input[type="button"]:hover {
+  background-color: #c82333; /* 어두운 빨간색 */
+}
