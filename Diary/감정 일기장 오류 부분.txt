@@ -1,0 +1,24 @@
+Editor
+----------------------------------------------------
+const Editor = ({ initData, onSubmit }) => { 
+  const [state, setState] = useState({
+--------------------------------괄호부분,오타
+    data: getFomattedDate(new Date()),
+    emotionId: 3,
+    content: "",
+  });
+
+
+util 
+-----------------------------------------
+export const getFomattedDate= (targetDate = new Date()) => {
+  
+ let year = targetDate.getFullYear();
+ let month = targetDate.getMonth() + 1;
+ let date = targetDate.getDate();
+ if(month < 10){
+ month = `0${date}`;
+}
+---------------백틱 부분 오타
+return`${year}-${month}-${date}`;
+};
