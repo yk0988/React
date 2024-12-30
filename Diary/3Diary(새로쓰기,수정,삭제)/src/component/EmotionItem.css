@@ -1,0 +1,56 @@
+.EmotionItem {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 12px;  /* padding을 조금 줄여서 여백을 더 좁혔습니다 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;  /* 각 이모티콘 항목 사이에 5px 여백 */
+  flex: 1 1 20%;  /* 한 줄에 5개씩 표시될 수 있도록 너비를 20%로 설정 */
+  box-sizing: border-box;  /* 여백이 요소의 크기에 포함되도록 설정 */
+  transition: transform 0.3s ease;  /* 마우스 오버 시 부드러운 효과를 추가 */
+}
+
+.EmotionItem:hover {
+  transform: scale(1.1);  /* 마우스 오버 시 크기 확대 효과 */
+}
+
+.EmotionItem img {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.EmotionItem span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.EmotionItem_off {
+  background-color: #ececec;
+}
+
+.EmotionItem_on_1 {
+  background-color: #64c964;
+  color: white;
+}
+
+.EmotionItem_on_2 {
+  background-color: #9dd772;
+  color: white;
+}
+
+.EmotionItem_on_3 {
+  background-color: #fdce17;
+  color: white;
+}
+
+.EmotionItem_on_4 {
+  background-color: #fd8446;
+  color: white;
+}
+
+.EmotionItem_on_5 {
+  background-color: #fd565f;
+  color: white;
+}
